@@ -28,7 +28,7 @@ var getDefinitions = function(word) {
           searchData = searchData + data;
         });
         response.on("end", function (data) {
-          console.log(searchData);
+          // console.log(searchData);
           if(!htmlRegExp.test(searchData)){
             //console.log(searchData);
             searchData = JSON.parse(searchData);
